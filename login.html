@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>로그인 - 경기모바일과학고등학교</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="custom.css"> <!-- 사용자 정의 스타일 -->
+</head>
+<body>
+    <div class="container d-flex align-items-center justify-content-center" style="height: 100vh;">
+        <div class="login-panel">
+            <h2 class="text-center mb-4">로그인</h2>
+            <form>
+                <div class="mb-3">
+                    <label for="id" class="form-label">아이디</label>
+                    <input type="text" class="form-control" id="id">
+                </div>
+                <div class="mb-3">
+                    <label for="password" class="form-label">비밀번호</label>
+                    <input type="password" class="form-control" id="password">
+                </div>
+                <div class="d-grid gap-2 mb-3">
+                    <button type="button" class="btn btn-primary" onclick="login()">로그인</button>
+                </div>
+                <div class="text-center">
+                    <a href="/signup.html" class="link-signup">회원가입</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="jquery.min.js"></script>
+    <script src="bootstrap.bundle.min.js"></script>
+    <script src="login.js"></script>
+</body>
+</html>

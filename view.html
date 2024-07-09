@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>게시물 보기 - 경기모바일과학고등학교</title>
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <link rel="stylesheet" href="custom.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <span class="navbar-brand">경기모바일과학고등학교</span>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0"></ul>
+        <div class="d-flex align-items-center">
+          <button class="btn btn-outline-success" onclick="logout()">로그아웃</button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container mt-5">
+    <div class="card">
+      <div class="card-header bg-primary text-white">
+        <h2 class="card-title" id="title">제목</h2>
+      </div>
+      <div class="card-body">
+        <h5 class="card-subtitle mb-2 text-muted">작성자: <span id="author"></span></h5>
+        <h6 class="card-subtitle mb-2 text-muted">작성일: <span id="date"></span></h6>
+        <hr>
+        <p class="card-text" id="content"></p>
+      </div>
+      <div class="card-footer">
+        <button class="btn btn-primary" onclick="location.href='index.html'">목록으로</button>
+        <button class="btn btn-secondary" onclick="location.href='post.html?edit=true&index=${postIndex}'">수정</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="jquery.min.js"></script>
+  <script src="bootstrap.bundle.min.js"></script>
+  <script src="common.js"></script>
+  <script src="view.js"></script>
+</body>
+</html>
