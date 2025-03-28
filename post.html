@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>글쓰기 - 경기모바일과학고등학교</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="jodit.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <span class="navbar-brand">경기모바일과학고등학교</span>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0"></ul>
+                <div class="d-flex align-items-center">
+                    <button class="btn btn-outline-success" onclick="logout()">로그아웃</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <h1 class="mb-4">글쓰기</h1>
+        <div class="mb-3">
+            <label for="title" class="form-label">제목</label>
+            <input type="text" class="form-control" id="title">
+        </div>
+        <div class="mb-3">
+            <label for="author" class="form-label">작성자</label>
+            <input type="text" class="form-control" id="author" disabled>
+        </div>
+        <div class="mb-3">
+            <label for="content" class="form-label">본문</label>
+            <textarea class="form-control" id="content" rows="6"></textarea>
+        </div>
+        <div class="d-grid gap-2">
+            <button class="btn btn-primary" onclick="save()">발행</button>
+        </div>
+    </div>
+
+    <script src="bootstrap.bundle.min.js"></script>
+    <script src="jquery.min.js"></script>
+    <script src="jodit.min.js"></script>
+    <script src="common.js"></script>
+    <script src="post.js"></script>
+</body>
+</html>
